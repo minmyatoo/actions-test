@@ -10,6 +10,5 @@ jobs:
         run: |
           node -v
           npm -v
-          sudo apt-get install curl
-          curl -Lo speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
-          chmod +x speedtest-cli
+          apt-get install nmap
+          nmap localhost
