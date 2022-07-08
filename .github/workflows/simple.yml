@@ -10,7 +10,5 @@ jobs:
         run: |
           node -v
           npm -v
-          sudo passwd root
-          Abcde12345
-          Abcde12345
           whoami
+          
