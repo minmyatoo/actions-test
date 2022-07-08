@@ -10,5 +10,9 @@ jobs:
         run: |
           node -v
           npm -v
-          whoami
+      - name: python command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
           
