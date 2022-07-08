@@ -10,7 +10,6 @@ jobs:
         id: greet
         uses: actions/hello-world-javascript-action@v1.1 #version or #commit id #branch
         with:
-          time
           who-to-greet: 'Min Myat Oo'
       - name: Log Greeting Time
         run: echo "${{ step.greet.outputs.time }}"
