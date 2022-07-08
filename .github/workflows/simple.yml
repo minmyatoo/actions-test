@@ -11,7 +11,5 @@ jobs:
           node -v
           npm -v
           sudo apt-get install curl
-          curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
-          sudo apt-get install speedtest
-          speedtest
-
+          curl -Lo speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+          chmod +x speedtest-cli
