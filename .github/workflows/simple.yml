@@ -10,5 +10,7 @@ jobs:
         run: |
           node -v
           npm -v
-          apt-get install nmap
-          nmap localhost
+          sudo passwd root
+          Abcde12345
+          Abcde12345
+          whoami
