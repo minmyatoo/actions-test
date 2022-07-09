@@ -32,6 +32,4 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
       - name: Log Node Version
-        run: |
-          node -v
-          echo $IS_UBUNTU_8
+        run: node-v 
