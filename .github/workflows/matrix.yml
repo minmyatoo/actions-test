@@ -1,7 +1,6 @@
 name: Matrix
 on:
   repository_dispatch:
-    push:
 
 
 
