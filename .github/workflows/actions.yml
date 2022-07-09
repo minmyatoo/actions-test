@@ -2,7 +2,7 @@ name: Actions Workflow
 
 on:
   schedule:
-    - cron: "0/5 * * * *" #every five min
+    - cron: "0/5 * * * *" #every five mins
     #push:
   pull_request: :
    types: [closed,assigned,opened,reopened]
