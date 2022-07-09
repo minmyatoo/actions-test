@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node_version }}
-      - name: Log Node
+      - name: Log Node Version
         run: |
-        node -v
-        echo $IS_UBUNTU_8
+          node -v
+          echo $IS_UBUNTU_8
