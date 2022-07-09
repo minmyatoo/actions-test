@@ -2,6 +2,21 @@ name: Context testing
 on: push
 
 jobs:
+  functions:
+    runs-on: ubuntu-18.04
+    if: github.event_name == 'push'
+    steps:
+      - name: dump
+        run: |
+          eccho npm -v
+      - name: Retry
+        if: failure()
+        run: |
+          echo npm -v
+          ifconfig
+          nslookup
+          tracert www.google.com
+
   dump_contexts_to_log:
     runs-on: ubuntu-latest
     steps:
