@@ -8,7 +8,7 @@ jobs:
       image: node:13.5.0-alpine3.10
     steps:
       - name: Log node version
-        run:|
+        run: |
           node -v
           cat /etc/os-release
 
