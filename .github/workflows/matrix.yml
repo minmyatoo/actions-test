@@ -1,7 +1,7 @@
 name: Matrix
 on:
-  repository_dispatch:
-    push:
+  push
+  repository_dispatch: 
 
 
 jobs:
@@ -32,4 +32,4 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
       - name: Log Node Version
-        run: node-v 
+        run: node-v
